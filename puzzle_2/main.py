@@ -18,7 +18,7 @@ def get_game_score(rock_paper_scissors_games: str):
     move = MOVE_MAP[opponent_move] - MOVE_MAP[my_move]
     if move == 0:
         game_score += 3
-    elif move % 3 == -1:
+    elif move == -1 or move == 2:
         game_score += 6
     return game_score
 
