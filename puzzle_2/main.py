@@ -2,7 +2,7 @@ from typing import Tuple
 
 rock_paper_scissors_file = open("puzzle_2/input.txt", "r")
 rock_paper_scissors: str = rock_paper_scissors_file.read()
-rock_paper_scissors_game: list = rock_paper_scissors.split("\n")
+rock_paper_scissors_games: list = rock_paper_scissors.split("\n")
 
 
 MOVE_MAP = {"A": 1, "B": 2, "C": 3, "X": 1, "Y": 2, "Z": 3}
@@ -16,6 +16,7 @@ def get_strategy_score(rock_paper_scissors_games: list[str]) -> Tuple[int, int]:
     return sum(games_score), sum(games_score_2)
 
 
+# part 1 score
 def get_game_score(rock_paper_scissors_game: str) -> int:
     opponent_move, my_move = get_move(rock_paper_scissors_game)
     move_result = opponent_move - my_move
@@ -30,6 +31,7 @@ def get_game_score(rock_paper_scissors_game: str) -> int:
     return game_score + my_move
 
 
+# part 2 score
 def get_game_score_2(rock_paper_scissors_game: str) -> int:
     opponent_move, game_score = get_move(rock_paper_scissors_game, is_result=True)
     # game_score = 3 means is a draw then my move = opponent move
@@ -60,4 +62,5 @@ def get_move(rock_paper_scissors_game: str, is_result: bool = False) -> Tuple[st
 
 
 if __name__ == "__main__":
-    print(get_strategy_score(rock_paper_scissors_game))
+
+    print(get_strategy_score(rock_paper_scissors_games))
