@@ -1,5 +1,5 @@
 import pytest
-from main import split_in_two, get_same_item, get_rucksack_score
+from main import split_in_two, get_same_item, get_rucksack_priorities
 
 RUCKSACK = "FzQrhQpJtJMFzlpplrTWjTnTTrjVsVvvTnTs"
 RUCKSACKS = ("FzQrhQpJtJMFzlpplr", "TWjTnTTrjVsVvvTnTs")
@@ -15,6 +15,6 @@ class TestRucksackReorganization:
         same_item = get_same_item(RUCKSACKS)
         assert same_item == SAME_ITEM
 
-    def test_get_rucksack_score(self):
-        rucksack_score = get_rucksack_score(SAME_ITEM)
+    def test_get_rucksack_priorioties(self):
+        rucksack_score = get_rucksack_priorities(SAME_ITEM)
         assert rucksack_score == 18
