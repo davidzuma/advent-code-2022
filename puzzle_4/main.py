@@ -1,8 +1,8 @@
 from typing import List, Tuple
 
 section_assignment_pairs = open("puzzle_4/input.txt", "r")
-section_assignment_pairs: list = section_assignment_pairs.read()
-section_assignment_pairs = section_assignment_pairs.split("\n")
+section_assignment_pairs = section_assignment_pairs.read()
+section_assignment_pairs: list = section_assignment_pairs.split("\n")
 
 
 def get_number_of_useless_pairs(section_assignment_pairs: List[str]) -> Tuple[int]:
