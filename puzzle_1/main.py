@@ -1,5 +1,5 @@
-elves_data_f = open("puzzle_1/input.txt", "r")
-elves_data_text = elves_data_f.read()
+with open("puzzle_1/input.txt", "r") as file:
+    elves_data_text = file.read()
 elves_calories_split = elves_data_text.split("\n\n")
 elves_num = len(elves_calories_split)
 elves_calories = sorted(

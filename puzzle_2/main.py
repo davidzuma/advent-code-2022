@@ -1,7 +1,7 @@
 from typing import Tuple
 
-rock_paper_scissors_file = open("puzzle_2/input.txt", "r")
-rock_paper_scissors: str = rock_paper_scissors_file.read()
+with open("puzzle_2/input.txt", "r") as file:
+    rock_paper_scissors: str = file.read()
 rock_paper_scissors_games: list = rock_paper_scissors.split("\n")
 
 

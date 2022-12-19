@@ -1,7 +1,7 @@
 from typing import Tuple, Iterable
 
-rucksacks_file = open("puzzle_3/input.txt", "r")
-rucksacks: list = rucksacks_file.read().split("\n")
+with open("puzzle_3/input.txt", "r") as file:
+    rucksacks: list = file.read().split("\n")
 rucksacks_packed = [rucksacks[idx : idx + 3] for idx in range(0, len(rucksacks), 3)]
 
 
