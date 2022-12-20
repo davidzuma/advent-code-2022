@@ -1,7 +1,7 @@
 from typing import List, Tuple
 
-section_assignment_pairs = open("puzzle_4/input.txt", "r")
-section_assignment_pairs = section_assignment_pairs.read()
+with open("puzzle_4/input.txt", "r") as file:
+    section_assignment_pairs = file.read()
 section_assignment_pairs: list = section_assignment_pairs.split("\n")
 
 
