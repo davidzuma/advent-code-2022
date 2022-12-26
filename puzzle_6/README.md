@@ -1,7 +1,3 @@
-Advent of Code[About][events][Shop][settings][Log Out]davidzuma 10\*
-<y>2022</y>[Calendar][aoc++][Sponsors][leaderboard][Stats]
-Our sponsors help make Advent of Code possible:
-BJSS - Our people are a team of problem solvers, experienced in evolving technologies and delivering world-class technology solutions.
 --- Day 6: Tuning Trouble ---
 The preparations are finally complete; you and the Elves leave camp on foot and begin to make your way toward the star fruit grove.
 

@@ -3,12 +3,6 @@ from typing import List, Tuple
 with open("puzzle_6/input.txt", "r") as file:
     datastream = file.read()
 
-a = "mjqjpqmgbljsphdztnvjfqwrcgsmlb"
-b = "bvwbjplbgvbhsrlpgdmjqwftvncz"
-c = "nppdvjthqldpwncqszvftbrmjlhg"
-d = "nznrnfrfntjfmvfwmzdfjlvtqnbhcprsg"
-e = "zcfzfwzzqfrljwzlrfnpqdbhtmscgvjw"
-
 
 def find_first_no_repeated_string(string: str, long) -> int:
     input_string = string
